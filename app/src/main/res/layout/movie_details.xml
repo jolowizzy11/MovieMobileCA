@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:contentDescription="@string/movie_image"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_smart_display_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="417dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="@font/robotocondensed"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:text="@string/movie_title"
+            android:textColor="#FFC107"
+            android:textColorHint="#100101"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_certification"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:fontFamily="@font/robotocondensed"
+            android:text="@string/movie_certification"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_starring"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:fontFamily="@font/robotocondensed"
+            android:text="@string/movie_starring"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/movie_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:id="@+id/movie_running_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/movie_running_time"
+                android:textColor="#FFC107" />
+
+            <TextView
+                android:id="@+id/movie_seats_remaining"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/movie_seats_remaining" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/SelectSeats"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingVertical="10dp"
+                android:text="Select Seats"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/minus_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#003C3F41"
+                android:contentDescription="@string/minus_button"
+                android:src="@drawable/baseline_remove_circle_outline_24"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <TextView
+                android:id="@+id/seats_selected_text"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingVertical="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/SelectedSIts"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/plus_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/plus_button"
+                android:src="@drawable/baseline_add_circle_outline_24"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <LinearLayout
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="5dp"
+                tools:ignore="UseCompoundDrawables,VisualLintBounds">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:baselineAligned="false"
+                    android:contentDescription="@string/chair"
+                    app:srcCompat="@drawable/baseline_chair_24" />
+
+                <TextView
+                    android:id="@+id/seats_remaining_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingHorizontal="5dp"
+                    android:text="@string/RemainingSits"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Seats Remaining"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

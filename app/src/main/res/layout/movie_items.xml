@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/robotocondensed"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="133dp"
+        android:layout_height="162dp"
+        android:contentDescription="@string/movie_image"
+        android:src="@drawable/baseline_smart_display_24"
+        app:srcCompat="@drawable/baseline_smart_display_24" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:text="@string/movie_title"
+            android:textColor="#FFC107"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_certification"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:text="@string/movie_certification"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:maxLines="2"
+            android:text="@string/movie_description"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_starring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:text="@string/actors_lists"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_running_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:text="@string/movie_running_time"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_seats_remaining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:text="@string/movie_seats"
+            android:textColor="#FFC107"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movie_filling_fast"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text=""
+            android:textColor="#FF0505"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
